@@ -24,51 +24,81 @@
 
 \vspace{0.1in}
 
-Due Tuesday October 20th, by 17:00EDT.  Submit through Crowdmark.
+Due Friday Dec.~18th, by 18:00EDT.  Submit through Crowdmark (three separate submissions, one for each numbered question below).
 
 \vspace{0.1in}
 
 \noindent
 
 \begin{enumerate}[(1),topsep=0pt,itemsep=0ex,partopsep=1ex,parsep=1ex]
-\item
+\item \textbf{The very simple array}\\
+Consider two point (or Hertzian) dipoles:
+\begin{enumerate}[(i)]
+\item one at $x=\lambda/8$, $y=0$, $z=0$ with dipole moment:
+\begin{equation}
+\vect{p}_1(t) = p_0 \cos (\omega t) \: \vect{\hat{z}}
+\end{equation}
+\item another at $x=-\lambda/8$, $y=0$, $z=0$ with dipole moment:
+\begin{equation}
+\vect{p}_2(t) = p_0 \cos (\omega t + \pi/2) \: \vect{\hat{z}}
+\end{equation}
+\end{enumerate}
+where in both cases $\lambda = c/(\omega / (2\pi))$.
+
 \begin{enumerate}[(a)]
-\item
-%PQD 801
+\item Derive an equation for the power radiated per solid angle $dP/d\Omega$ as a function of azimuthal\footnote{Warning: I'm using the physics convention for $\phi$ and $\theta$ here.} angle $\phi$, in the $xy$ plane;  i.e., $\theta =0$.  Illustrate your results graphically using a  ``\href{https://matplotlib.org/3.1.0/gallery/pie_and_polar_charts/polar_demo.html}{polar plot}'' of $dP/d\Omega$.
+\item Imagine a {\em hypothetical} radiating system emitting the same {\em total} power as the two dipoles, only isotropically; i.e., $dP/d\Omega$ does not depend on direction.  \textbf{Antenna gain} is the ratio of peak $dP/d\Omega$ to the hypothetical isotropic $dP/d\Omega$.  It is a figure of merit that tells us how good the system is at sending radiation in a specific direction, which is obviously important in some applications.
 
-\newpage
-
-\item
-%PQD 804
-
-\newpage
-
-\item
-%PQD 805
-
+Compute the antenna gain for this two dipole system.  (You may use a computer, but must document your work.)
 \end{enumerate}
 
+You are allowed to use any of the standard results for a single radiating dipole.
+
+(In addition to serving as an illustration of the simplest type of phased array antenna, this question also gives you an idea for how the radiated power may be computed due to continuous current distributions with dimensions comparable or larger than a wavelength --- instead of summing as here, one integrates.)
+
 \newpage
 
-\item
+\item \textbf{Quivering electrons}\\
+Consider a free electron impinged upon by a linearly polarized EM plane wave.  The electron will be accelerated back and forth by the electric field due to the EM wave.  The electron will then radiate electromagnetic energy in different directions.
+
+This process may be characterized by a ``cross-section'' $\sigma$: a quantity that has units of area, so that when multiplied by average energy flux in the electromagnetic wave (in power per unit area), we obtain the power ``scattered'' out of the EM wave.
+
 \begin{enumerate}[(a)]
+\item Give the cross-section for scattering by a free electron in the non-relativistic limit.  Your cross-section should be independent of the {\em strength} of the incident EM wave.
+\item Justify ignoring the $q \: \vect{v} \times \vect{B}$ force on the electron.
+\end{enumerate}
 
-\item
-%PQD 806
+\item \textbf{Writing Hertz}\\
+There is an \href{https://dx.doi.org/ghm5zs}{article by Smith} (pdf posted to the Learn web-site) describing Hertz's experiments on the generation and measurement of electromagnetic waves from a modern point of view.
 
-\newpage
+Hertz measured an interference pattern formed by reflection of an electrically generated EM wave from a metal reflector.  With an estimate of the frequency of the radiation emitted and a measurement of the wavelength from the pattern, he could check whether or not the waves have the same velocity as the speed of light.  His experiments were considered a critical test of Maxwell's theory, which was not as quickly accepted as modern textbooks might lead you to believe.
 
-\item
-%PQD 807
+However, his initial experiments indicated a speed of light that was approximately $1.5 \times$ of the value accepted by other means.
 
-\newpage
+Sarasin and de la Rive repeated Hertz's experiments with a variety of improvements, ultimately obtaining much better agreement with the speed of light.  One source of error that they explored was related to the dimensions of the ``detecting'' antenna.  (Smith argues -- somewhat unconvincingly --- that this was {\em not} the reason for Hertz's discrepancy.)
 
-\item
-%PQD 808
+Explain how the source of error investigated by Sarasin and de la Rive could lead to an incorrect estimate of the speed of the EM waves.  Your audience is yourself prior to reading Smith's article.  You will need to explain how Hertz generated the EM waves, the measurements made to establish the speed of light, and so-on, as a background to understanding the error.  Keep it under 500 words.
 
 \end{enumerate}
 
+\newpage
+
+{\bf Instructions}
+
+For full marks, the following guidelines should be followed:
+\begin{enumerate}[(1)]
+\item Your final answer should be clear, and where appropriate it should be \framebox{boxed}.  (i.e., a simple numerical answer should be boxed; a long multi-sentence qualitative answer need not be.)  Do not box anything {\em except} the final answer to the specific question being asked.
+\item If your answer has physical units, these must be clearly indicated.
+\item Where appropriate, use metric prefixes, and/or scientific notation.
+e.g., do not indicate a length as $\SI{0.00001}{m}$, which is error-prone and difficult to read, but instead write $\SI{1e-5}{m}$ or $\SI{10}{\mu m}$.
+\item Distinguish clearly between vector and non-vector quantities.
+\item A set of equations with no explanatory words, no statements of assumptions, no definition of variables, etc... is not acceptable.  If for some reason your numerical answer to a question is not correct, an indication of your reasoning will help you obtain partial marks.
+\item Your solution should be presented linearly, so that the order of your reasoning is obvious to the marker.  Avoid ambiguous ``double-column'' presentation.
+\item It's fine to reference an equation derived in the notes (or elsewhere), together with a few words indicating the physical principles on which it's based, so that the reasoning on which your solution is based is clear. For example, if an equation that you use has limits on its applicability --- for instance, it only applies to a particular processes --- then the reason why it's applicable in your solution must be made clear to the marker.
 \end{enumerate}
 
+\begin{center}
+Good luck!!!
+\end{center}
 
 \end{document}
